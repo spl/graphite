@@ -82,10 +82,12 @@ if (BUILD_SHARED_LIBS)
 endif()
 
 add_subdirectory(src)
+if (FALSE)
 add_subdirectory(tests)
 add_subdirectory(doc)
 if (NOT GRAPHITE2_NFILEFACE)
     add_subdirectory(gr2fonttest)
+endif()
 endif()
 
 set(version 3.0.1)
