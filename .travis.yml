@@ -3,5 +3,5 @@ os: windows
 script:
   - mkdir build
   - cd build
-  - cmake -DCMAKE_BUILD_TYPE:STRING=Release ..
+  - cmake -DCMAKE_BUILD_TYPE:STRING=Release -DBUILD_SHARED_LIBS:BOOL=OFF ..
   - cmake --build . --target install --config Release
