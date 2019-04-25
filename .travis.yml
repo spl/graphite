@@ -3,5 +3,5 @@ os: windows
 script:
   - mkdir build
   - cd build
-  - cmake -DCMAKE_BUILD_TYPE:STRING=Release -DBUILD_SHARED_LIBS:BOOL=OFF ..
+  - cmake -DCMAKE_BUILD_TYPE:STRING=Release -DBUILD_SHARED_LIBS:BOOL=OFF -DGRAPHITE2_NFILEFACE:BOOL=ON ..
   - cmake --build . --target install --config Release
